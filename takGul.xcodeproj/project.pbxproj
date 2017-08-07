@@ -7,14 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		014A72581F3759920082B5B7 /* logo_splash_completed.png in Resources */ = {isa = PBXBuildFile; fileRef = 014A72571F3759920082B5B7 /* logo_splash_completed.png */; };
+		014A725A1F375FEE0082B5B7 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014A72591F375FEE0082B5B7 /* UIColor.swift */; };
+		014A725D1F3781140082B5B7 /* ic_splash_startbtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 014A725C1F3781140082B5B7 /* ic_splash_startbtn.png */; };
+		014A725F1F3782340082B5B7 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014A725E1F3782340082B5B7 /* MainViewController.swift */; };
 		0189B09C1F375097004DD330 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0189B09B1F375097004DD330 /* AppDelegate.swift */; };
 		0189B09E1F375097004DD330 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0189B09D1F375097004DD330 /* ViewController.swift */; };
 		0189B0A11F375097004DD330 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0189B09F1F375097004DD330 /* Main.storyboard */; };
 		0189B0A31F375097004DD330 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0189B0A21F375097004DD330 /* Assets.xcassets */; };
 		0189B0A61F375097004DD330 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0189B0A41F375097004DD330 /* LaunchScreen.storyboard */; };
+		01D25E8C1F38012E001CD722 /* ic_main_history.png in Resources */ = {isa = PBXBuildFile; fileRef = 01D25E891F38012E001CD722 /* ic_main_history.png */; };
+		01D25E8D1F38012E001CD722 /* ic_main_mydictionary.png in Resources */ = {isa = PBXBuildFile; fileRef = 01D25E8A1F38012E001CD722 /* ic_main_mydictionary.png */; };
+		01D25E8E1F38012E001CD722 /* ic_main_ranking.png in Resources */ = {isa = PBXBuildFile; fileRef = 01D25E8B1F38012E001CD722 /* ic_main_ranking.png */; };
+		01D25E901F380B9C001CD722 /* ic_mydictionary_bookmark_uncheck.png in Resources */ = {isa = PBXBuildFile; fileRef = 01D25E8F1F380B9C001CD722 /* ic_mydictionary_bookmark_uncheck.png */; };
+		01D25E921F380C3A001CD722 /* DictonaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D25E911F380C3A001CD722 /* DictonaryViewController.swift */; };
+		01D25E941F3812F0001CD722 /* bg_splash.png in Resources */ = {isa = PBXBuildFile; fileRef = 01D25E931F3812F0001CD722 /* bg_splash.png */; };
+		01D25E971F381343001CD722 /* logo_splash_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 01D25E951F381343001CD722 /* logo_splash_1.png */; };
+		01D25E981F381343001CD722 /* logo_splash_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 01D25E961F381343001CD722 /* logo_splash_2.png */; };
+		65DC882AD247D90EBF068F90 /* Pods_takGul.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BE090BBDA9B3827E398EDD6 /* Pods_takGul.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		014A72571F3759920082B5B7 /* logo_splash_completed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo_splash_completed.png; path = "../../../../Downloads/Tak_geul-master/Resource_xxxhdpi/logo_splash_completed.png"; sourceTree = "<group>"; };
+		014A72591F375FEE0082B5B7 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		014A725B1F3780750082B5B7 /* NanumBarunGothic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = NanumBarunGothic.ttf; path = "../../../../Downloads/Chanbobsinse-master/nanum_barun_gothic/NanumBarunGothic.ttf"; sourceTree = "<group>"; };
+		014A725C1F3781140082B5B7 /* ic_splash_startbtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_splash_startbtn.png; path = "../../../../Downloads/Tak_geul-master/Resource_xxxhdpi/ic_splash_startbtn.png"; sourceTree = "<group>"; };
+		014A725E1F3782340082B5B7 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		0189B0981F375097004DD330 /* takGul.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = takGul.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0189B09B1F375097004DD330 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0189B09D1F375097004DD330 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +40,17 @@
 		0189B0A21F375097004DD330 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0189B0A51F375097004DD330 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0189B0A71F375097004DD330 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01D25E891F38012E001CD722 /* ic_main_history.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_main_history.png; path = "../../../../Downloads/Tak_geul-master/Resource_xxxhdpi/ic_main_history.png"; sourceTree = "<group>"; };
+		01D25E8A1F38012E001CD722 /* ic_main_mydictionary.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_main_mydictionary.png; path = "../../../../Downloads/Tak_geul-master/Resource_xxxhdpi/ic_main_mydictionary.png"; sourceTree = "<group>"; };
+		01D25E8B1F38012E001CD722 /* ic_main_ranking.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_main_ranking.png; path = "../../../../Downloads/Tak_geul-master/Resource_xxxhdpi/ic_main_ranking.png"; sourceTree = "<group>"; };
+		01D25E8F1F380B9C001CD722 /* ic_mydictionary_bookmark_uncheck.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_mydictionary_bookmark_uncheck.png; path = "../../../../Downloads/Tak_geul-master/Resource_xxxhdpi/ic_mydictionary_bookmark_uncheck.png"; sourceTree = "<group>"; };
+		01D25E911F380C3A001CD722 /* DictonaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictonaryViewController.swift; sourceTree = "<group>"; };
+		01D25E931F3812F0001CD722 /* bg_splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bg_splash.png; path = "../../../../Downloads/Tak_geul-master-2/Resource_xxxhdpi/bg_splash.png"; sourceTree = "<group>"; };
+		01D25E951F381343001CD722 /* logo_splash_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo_splash_1.png; path = "../../../../Downloads/Tak_geul-master-2/Resource_xxxhdpi/logo_splash_1.png"; sourceTree = "<group>"; };
+		01D25E961F381343001CD722 /* logo_splash_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo_splash_2.png; path = "../../../../Downloads/Tak_geul-master-2/Resource_xxxhdpi/logo_splash_2.png"; sourceTree = "<group>"; };
+		0BE090BBDA9B3827E398EDD6 /* Pods_takGul.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_takGul.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F84DA7AB7C03A9FEA4664E9 /* Pods-takGul.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-takGul.release.xcconfig"; path = "Pods/Target Support Files/Pods-takGul/Pods-takGul.release.xcconfig"; sourceTree = "<group>"; };
+		FD9EF527A418D83DD08418EA /* Pods-takGul.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-takGul.debug.xcconfig"; path = "Pods/Target Support Files/Pods-takGul/Pods-takGul.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65DC882AD247D90EBF068F90 /* Pods_takGul.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +70,8 @@
 			children = (
 				0189B09A1F375097004DD330 /* takGul */,
 				0189B0991F375097004DD330 /* Products */,
+				C551E2546F28A59D9F60CD60 /* Pods */,
+				2EB1FF41CDCE06AD1293DF22 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +86,44 @@
 		0189B09A1F375097004DD330 /* takGul */ = {
 			isa = PBXGroup;
 			children = (
+				01D25E951F381343001CD722 /* logo_splash_1.png */,
+				01D25E961F381343001CD722 /* logo_splash_2.png */,
 				0189B09B1F375097004DD330 /* AppDelegate.swift */,
 				0189B09D1F375097004DD330 /* ViewController.swift */,
+				014A725E1F3782340082B5B7 /* MainViewController.swift */,
 				0189B09F1F375097004DD330 /* Main.storyboard */,
 				0189B0A21F375097004DD330 /* Assets.xcassets */,
 				0189B0A41F375097004DD330 /* LaunchScreen.storyboard */,
 				0189B0A71F375097004DD330 /* Info.plist */,
+				014A72571F3759920082B5B7 /* logo_splash_completed.png */,
+				014A72591F375FEE0082B5B7 /* UIColor.swift */,
+				014A725B1F3780750082B5B7 /* NanumBarunGothic.ttf */,
+				014A725C1F3781140082B5B7 /* ic_splash_startbtn.png */,
+				01D25E891F38012E001CD722 /* ic_main_history.png */,
+				01D25E8A1F38012E001CD722 /* ic_main_mydictionary.png */,
+				01D25E8B1F38012E001CD722 /* ic_main_ranking.png */,
+				01D25E8F1F380B9C001CD722 /* ic_mydictionary_bookmark_uncheck.png */,
+				01D25E911F380C3A001CD722 /* DictonaryViewController.swift */,
+				01D25E931F3812F0001CD722 /* bg_splash.png */,
 			);
 			path = takGul;
+			sourceTree = "<group>";
+		};
+		2EB1FF41CDCE06AD1293DF22 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0BE090BBDA9B3827E398EDD6 /* Pods_takGul.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C551E2546F28A59D9F60CD60 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FD9EF527A418D83DD08418EA /* Pods-takGul.debug.xcconfig */,
+				4F84DA7AB7C03A9FEA4664E9 /* Pods-takGul.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +133,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0189B0AA1F375097004DD330 /* Build configuration list for PBXNativeTarget "takGul" */;
 			buildPhases = (
+				BC5300C7988B0C02C906D0F9 /* [CP] Check Pods Manifest.lock */,
 				0189B0941F375097004DD330 /* Sources */,
 				0189B0951F375097004DD330 /* Frameworks */,
 				0189B0961F375097004DD330 /* Resources */,
+				A05DCB18C38F63AD7C24B323 /* [CP] Embed Pods Frameworks */,
+				9419CD13EEAB8A1527141F0C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -124,13 +189,70 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				014A725D1F3781140082B5B7 /* ic_splash_startbtn.png in Resources */,
 				0189B0A61F375097004DD330 /* LaunchScreen.storyboard in Resources */,
 				0189B0A31F375097004DD330 /* Assets.xcassets in Resources */,
+				01D25E8C1F38012E001CD722 /* ic_main_history.png in Resources */,
 				0189B0A11F375097004DD330 /* Main.storyboard in Resources */,
+				01D25E941F3812F0001CD722 /* bg_splash.png in Resources */,
+				01D25E971F381343001CD722 /* logo_splash_1.png in Resources */,
+				01D25E901F380B9C001CD722 /* ic_mydictionary_bookmark_uncheck.png in Resources */,
+				01D25E981F381343001CD722 /* logo_splash_2.png in Resources */,
+				014A72581F3759920082B5B7 /* logo_splash_completed.png in Resources */,
+				01D25E8D1F38012E001CD722 /* ic_main_mydictionary.png in Resources */,
+				01D25E8E1F38012E001CD722 /* ic_main_ranking.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9419CD13EEAB8A1527141F0C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-takGul/Pods-takGul-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A05DCB18C38F63AD7C24B323 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-takGul/Pods-takGul-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC5300C7988B0C02C906D0F9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0189B0941F375097004DD330 /* Sources */ = {
@@ -138,7 +260,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				0189B09E1F375097004DD330 /* ViewController.swift in Sources */,
+				01D25E921F380C3A001CD722 /* DictonaryViewController.swift in Sources */,
+				014A725A1F375FEE0082B5B7 /* UIColor.swift in Sources */,
 				0189B09C1F375097004DD330 /* AppDelegate.swift in Sources */,
+				014A725F1F3782340082B5B7 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +384,7 @@
 		};
 		0189B0AB1F375097004DD330 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD9EF527A418D83DD08418EA /* Pods-takGul.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = ZESNLFKEBA;
@@ -272,6 +398,7 @@
 		};
 		0189B0AC1F375097004DD330 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F84DA7AB7C03A9FEA4664E9 /* Pods-takGul.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = ZESNLFKEBA;
@@ -302,6 +429,7 @@
 				0189B0AC1F375097004DD330 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
