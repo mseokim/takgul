@@ -7,32 +7,45 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0108590D1F38F8B900835212 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0108590C1F38F8B900835212 /* icon.png */; };
 		014A72581F3759920082B5B7 /* logo_splash_completed.png in Resources */ = {isa = PBXBuildFile; fileRef = 014A72571F3759920082B5B7 /* logo_splash_completed.png */; };
 		014A725A1F375FEE0082B5B7 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014A72591F375FEE0082B5B7 /* UIColor.swift */; };
 		014A725D1F3781140082B5B7 /* ic_splash_startbtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 014A725C1F3781140082B5B7 /* ic_splash_startbtn.png */; };
 		014A725F1F3782340082B5B7 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014A725E1F3782340082B5B7 /* MainViewController.swift */; };
+		0183A2111F3A3EA80086F91E /* week.png in Resources */ = {isa = PBXBuildFile; fileRef = 0183A2101F3A3EA80086F91E /* week.png */; };
+		0183A2131F3A3EE20086F91E /* day.png in Resources */ = {isa = PBXBuildFile; fileRef = 0183A2121F3A3EE20086F91E /* day.png */; };
 		0189B09C1F375097004DD330 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0189B09B1F375097004DD330 /* AppDelegate.swift */; };
 		0189B09E1F375097004DD330 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0189B09D1F375097004DD330 /* ViewController.swift */; };
 		0189B0A11F375097004DD330 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0189B09F1F375097004DD330 /* Main.storyboard */; };
 		0189B0A31F375097004DD330 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0189B0A21F375097004DD330 /* Assets.xcassets */; };
 		0189B0A61F375097004DD330 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0189B0A41F375097004DD330 /* LaunchScreen.storyboard */; };
+		01943A251F43286B00326BDE /* RankingDayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01943A241F43286B00326BDE /* RankingDayViewController.swift */; };
+		01943A271F43287700326BDE /* RankingWeekViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01943A261F43287700326BDE /* RankingWeekViewController.swift */; };
+		01943A291F43288100326BDE /* RankingFavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01943A281F43288100326BDE /* RankingFavoriteViewController.swift */; };
+		01943A2B1F43288C00326BDE /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01943A2A1F43288C00326BDE /* HistoryViewController.swift */; };
+		01A60CC61F3B489B000CCDFB /* colorStar.png in Resources */ = {isa = PBXBuildFile; fileRef = 01A60CC41F3B489B000CCDFB /* colorStar.png */; };
+		01A60CC71F3B489B000CCDFB /* blankStar.png in Resources */ = {isa = PBXBuildFile; fileRef = 01A60CC51F3B489B000CCDFB /* blankStar.png */; };
+		01D1816D1F431D1F0067BF4F /* MostDictionaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D1816C1F431D1F0067BF4F /* MostDictionaryViewController.swift */; };
+		01D1816F1F431D2D0067BF4F /* FavoriteDictionaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D1816E1F431D2D0067BF4F /* FavoriteDictionaryViewController.swift */; };
 		01D25E8C1F38012E001CD722 /* ic_main_history.png in Resources */ = {isa = PBXBuildFile; fileRef = 01D25E891F38012E001CD722 /* ic_main_history.png */; };
 		01D25E8D1F38012E001CD722 /* ic_main_mydictionary.png in Resources */ = {isa = PBXBuildFile; fileRef = 01D25E8A1F38012E001CD722 /* ic_main_mydictionary.png */; };
 		01D25E8E1F38012E001CD722 /* ic_main_ranking.png in Resources */ = {isa = PBXBuildFile; fileRef = 01D25E8B1F38012E001CD722 /* ic_main_ranking.png */; };
 		01D25E901F380B9C001CD722 /* ic_mydictionary_bookmark_uncheck.png in Resources */ = {isa = PBXBuildFile; fileRef = 01D25E8F1F380B9C001CD722 /* ic_mydictionary_bookmark_uncheck.png */; };
-		01D25E921F380C3A001CD722 /* DictonaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D25E911F380C3A001CD722 /* DictonaryViewController.swift */; };
 		01D25E941F3812F0001CD722 /* bg_splash.png in Resources */ = {isa = PBXBuildFile; fileRef = 01D25E931F3812F0001CD722 /* bg_splash.png */; };
 		01D25E971F381343001CD722 /* logo_splash_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 01D25E951F381343001CD722 /* logo_splash_1.png */; };
-		01D25E981F381343001CD722 /* logo_splash_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 01D25E961F381343001CD722 /* logo_splash_2.png */; };
 		65DC882AD247D90EBF068F90 /* Pods_takGul.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BE090BBDA9B3827E398EDD6 /* Pods_takGul.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0108590C1F38F8B900835212 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = "../../../../Downloads/Tak_geul-master-3/Icons/original/icon.png"; sourceTree = "<group>"; };
 		014A72571F3759920082B5B7 /* logo_splash_completed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo_splash_completed.png; path = "../../../../Downloads/Tak_geul-master/Resource_xxxhdpi/logo_splash_completed.png"; sourceTree = "<group>"; };
 		014A72591F375FEE0082B5B7 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		014A725B1F3780750082B5B7 /* NanumBarunGothic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = NanumBarunGothic.ttf; path = "../../../../Downloads/Chanbobsinse-master/nanum_barun_gothic/NanumBarunGothic.ttf"; sourceTree = "<group>"; };
 		014A725C1F3781140082B5B7 /* ic_splash_startbtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_splash_startbtn.png; path = "../../../../Downloads/Tak_geul-master/Resource_xxxhdpi/ic_splash_startbtn.png"; sourceTree = "<group>"; };
 		014A725E1F3782340082B5B7 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		0183A20D1F3A3AFD0086F91E /* NanumBarunGothicBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = NanumBarunGothicBold.ttf; path = "../../../../Downloads/Chanbobsinse-master/nanum_barun_gothic/NanumBarunGothicBold.ttf"; sourceTree = "<group>"; };
+		0183A2101F3A3EA80086F91E /* week.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = week.png; path = ../../../../Downloads/week.png; sourceTree = "<group>"; };
+		0183A2121F3A3EE20086F91E /* day.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = day.png; path = ../../../../Downloads/day.png; sourceTree = "<group>"; };
 		0189B0981F375097004DD330 /* takGul.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = takGul.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0189B09B1F375097004DD330 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0189B09D1F375097004DD330 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -40,14 +53,20 @@
 		0189B0A21F375097004DD330 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0189B0A51F375097004DD330 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0189B0A71F375097004DD330 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01943A241F43286B00326BDE /* RankingDayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RankingDayViewController.swift; sourceTree = "<group>"; };
+		01943A261F43287700326BDE /* RankingWeekViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RankingWeekViewController.swift; sourceTree = "<group>"; };
+		01943A281F43288100326BDE /* RankingFavoriteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RankingFavoriteViewController.swift; sourceTree = "<group>"; };
+		01943A2A1F43288C00326BDE /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		01A60CC41F3B489B000CCDFB /* colorStar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = colorStar.png; path = "../../../../Downloads/Tak_geul-master-3/Resource_xxxhdpi/colorStar.png"; sourceTree = "<group>"; };
+		01A60CC51F3B489B000CCDFB /* blankStar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blankStar.png; path = "../../../../Downloads/Tak_geul-master-3/Resource_xxxhdpi/blankStar.png"; sourceTree = "<group>"; };
+		01D1816C1F431D1F0067BF4F /* MostDictionaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MostDictionaryViewController.swift; sourceTree = "<group>"; };
+		01D1816E1F431D2D0067BF4F /* FavoriteDictionaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteDictionaryViewController.swift; sourceTree = "<group>"; };
 		01D25E891F38012E001CD722 /* ic_main_history.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_main_history.png; path = "../../../../Downloads/Tak_geul-master/Resource_xxxhdpi/ic_main_history.png"; sourceTree = "<group>"; };
 		01D25E8A1F38012E001CD722 /* ic_main_mydictionary.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_main_mydictionary.png; path = "../../../../Downloads/Tak_geul-master/Resource_xxxhdpi/ic_main_mydictionary.png"; sourceTree = "<group>"; };
 		01D25E8B1F38012E001CD722 /* ic_main_ranking.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_main_ranking.png; path = "../../../../Downloads/Tak_geul-master/Resource_xxxhdpi/ic_main_ranking.png"; sourceTree = "<group>"; };
 		01D25E8F1F380B9C001CD722 /* ic_mydictionary_bookmark_uncheck.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_mydictionary_bookmark_uncheck.png; path = "../../../../Downloads/Tak_geul-master/Resource_xxxhdpi/ic_mydictionary_bookmark_uncheck.png"; sourceTree = "<group>"; };
-		01D25E911F380C3A001CD722 /* DictonaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictonaryViewController.swift; sourceTree = "<group>"; };
 		01D25E931F3812F0001CD722 /* bg_splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bg_splash.png; path = "../../../../Downloads/Tak_geul-master-2/Resource_xxxhdpi/bg_splash.png"; sourceTree = "<group>"; };
 		01D25E951F381343001CD722 /* logo_splash_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo_splash_1.png; path = "../../../../Downloads/Tak_geul-master-2/Resource_xxxhdpi/logo_splash_1.png"; sourceTree = "<group>"; };
-		01D25E961F381343001CD722 /* logo_splash_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo_splash_2.png; path = "../../../../Downloads/Tak_geul-master-2/Resource_xxxhdpi/logo_splash_2.png"; sourceTree = "<group>"; };
 		0BE090BBDA9B3827E398EDD6 /* Pods_takGul.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_takGul.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F84DA7AB7C03A9FEA4664E9 /* Pods-takGul.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-takGul.release.xcconfig"; path = "Pods/Target Support Files/Pods-takGul/Pods-takGul.release.xcconfig"; sourceTree = "<group>"; };
 		FD9EF527A418D83DD08418EA /* Pods-takGul.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-takGul.debug.xcconfig"; path = "Pods/Target Support Files/Pods-takGul/Pods-takGul.debug.xcconfig"; sourceTree = "<group>"; };
@@ -86,8 +105,6 @@
 		0189B09A1F375097004DD330 /* takGul */ = {
 			isa = PBXGroup;
 			children = (
-				01D25E951F381343001CD722 /* logo_splash_1.png */,
-				01D25E961F381343001CD722 /* logo_splash_2.png */,
 				0189B09B1F375097004DD330 /* AppDelegate.swift */,
 				0189B09D1F375097004DD330 /* ViewController.swift */,
 				014A725E1F3782340082B5B7 /* MainViewController.swift */,
@@ -95,18 +112,38 @@
 				0189B0A21F375097004DD330 /* Assets.xcassets */,
 				0189B0A41F375097004DD330 /* LaunchScreen.storyboard */,
 				0189B0A71F375097004DD330 /* Info.plist */,
-				014A72571F3759920082B5B7 /* logo_splash_completed.png */,
 				014A72591F375FEE0082B5B7 /* UIColor.swift */,
+				01D1816C1F431D1F0067BF4F /* MostDictionaryViewController.swift */,
+				01D1816E1F431D2D0067BF4F /* FavoriteDictionaryViewController.swift */,
+				01943A241F43286B00326BDE /* RankingDayViewController.swift */,
+				01943A261F43287700326BDE /* RankingWeekViewController.swift */,
+				01943A281F43288100326BDE /* RankingFavoriteViewController.swift */,
+				01943A2A1F43288C00326BDE /* HistoryViewController.swift */,
+				01D181671F4313D80067BF4F /* photo */,
+			);
+			path = takGul;
+			sourceTree = "<group>";
+		};
+		01D181671F4313D80067BF4F /* photo */ = {
+			isa = PBXGroup;
+			children = (
+				014A72571F3759920082B5B7 /* logo_splash_completed.png */,
 				014A725B1F3780750082B5B7 /* NanumBarunGothic.ttf */,
 				014A725C1F3781140082B5B7 /* ic_splash_startbtn.png */,
 				01D25E891F38012E001CD722 /* ic_main_history.png */,
 				01D25E8A1F38012E001CD722 /* ic_main_mydictionary.png */,
 				01D25E8B1F38012E001CD722 /* ic_main_ranking.png */,
 				01D25E8F1F380B9C001CD722 /* ic_mydictionary_bookmark_uncheck.png */,
-				01D25E911F380C3A001CD722 /* DictonaryViewController.swift */,
 				01D25E931F3812F0001CD722 /* bg_splash.png */,
+				0183A20D1F3A3AFD0086F91E /* NanumBarunGothicBold.ttf */,
+				0183A2101F3A3EA80086F91E /* week.png */,
+				0183A2121F3A3EE20086F91E /* day.png */,
+				01A60CC41F3B489B000CCDFB /* colorStar.png */,
+				01A60CC51F3B489B000CCDFB /* blankStar.png */,
+				01D25E951F381343001CD722 /* logo_splash_1.png */,
+				0108590C1F38F8B900835212 /* icon.png */,
 			);
-			path = takGul;
+			name = photo;
 			sourceTree = "<group>";
 		};
 		2EB1FF41CDCE06AD1293DF22 /* Frameworks */ = {
@@ -189,15 +226,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0183A2131F3A3EE20086F91E /* day.png in Resources */,
 				014A725D1F3781140082B5B7 /* ic_splash_startbtn.png in Resources */,
 				0189B0A61F375097004DD330 /* LaunchScreen.storyboard in Resources */,
+				01A60CC71F3B489B000CCDFB /* blankStar.png in Resources */,
 				0189B0A31F375097004DD330 /* Assets.xcassets in Resources */,
 				01D25E8C1F38012E001CD722 /* ic_main_history.png in Resources */,
 				0189B0A11F375097004DD330 /* Main.storyboard in Resources */,
+				0108590D1F38F8B900835212 /* icon.png in Resources */,
 				01D25E941F3812F0001CD722 /* bg_splash.png in Resources */,
+				01A60CC61F3B489B000CCDFB /* colorStar.png in Resources */,
 				01D25E971F381343001CD722 /* logo_splash_1.png in Resources */,
+				0183A2111F3A3EA80086F91E /* week.png in Resources */,
 				01D25E901F380B9C001CD722 /* ic_mydictionary_bookmark_uncheck.png in Resources */,
-				01D25E981F381343001CD722 /* logo_splash_2.png in Resources */,
 				014A72581F3759920082B5B7 /* logo_splash_completed.png in Resources */,
 				01D25E8D1F38012E001CD722 /* ic_main_mydictionary.png in Resources */,
 				01D25E8E1F38012E001CD722 /* ic_main_ranking.png in Resources */,
@@ -260,10 +301,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				0189B09E1F375097004DD330 /* ViewController.swift in Sources */,
-				01D25E921F380C3A001CD722 /* DictonaryViewController.swift in Sources */,
 				014A725A1F375FEE0082B5B7 /* UIColor.swift in Sources */,
+				01D1816F1F431D2D0067BF4F /* FavoriteDictionaryViewController.swift in Sources */,
+				01943A2B1F43288C00326BDE /* HistoryViewController.swift in Sources */,
+				01943A251F43286B00326BDE /* RankingDayViewController.swift in Sources */,
+				01D1816D1F431D1F0067BF4F /* MostDictionaryViewController.swift in Sources */,
+				01943A291F43288100326BDE /* RankingFavoriteViewController.swift in Sources */,
 				0189B09C1F375097004DD330 /* AppDelegate.swift in Sources */,
 				014A725F1F3782340082B5B7 /* MainViewController.swift in Sources */,
+				01943A271F43287700326BDE /* RankingWeekViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

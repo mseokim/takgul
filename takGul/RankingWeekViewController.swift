@@ -1,20 +1,18 @@
 //
-//  DictonaryViewController.swift
+//  RankingWeekViewController.swift
 //  takGul
 //
-//  Created by 김민서 on 2017. 8. 7..
+//  Created by 김민서 on 2017. 8. 15..
 //  Copyright © 2017년 김민서. All rights reserved.
 //
 
 import UIKit
 
-class DictonaryViewController: UIViewController {
+class RankingWeekViewController: UIViewController {
 
-    @IBOutlet weak var topBar: UINavigationBar!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         // Do any additional setup after loading the view.
     }
 
