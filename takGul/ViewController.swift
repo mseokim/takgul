@@ -23,7 +23,7 @@ class ViewController: UIViewController {
         btnStart.alpha = 0
         logo_perfect.alpha = 0
         
-        stickTop_2.constant = 237
+        stickTop_2.constant = 23
         
         
         UIView.animate(withDuration: 3.0, animations: {

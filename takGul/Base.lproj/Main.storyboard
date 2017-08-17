@@ -288,6 +288,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="NanumBarunGothic" family="NanumBarunGothic" pointSize="15"/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="testbt:" destination="2BJ-cT-9H1" eventType="touchUpInside" id="yeL-cl-p8r"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FPy-jd-egV">
                                 <rect key="frame" x="80" y="117" width="60" height="60"/>
@@ -325,10 +328,16 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="btn1" destination="Y7o-Ic-VWb" id="8W0-bX-57W"/>
+                        <outlet property="btn2" destination="FPy-jd-egV" id="A6r-o3-MPI"/>
+                        <outlet property="btn3" destination="sCM-CN-AHd" id="pJt-b9-9YR"/>
+                        <outlet property="btn4" destination="4Q2-Qd-T3J" id="vxt-rb-aDd"/>
+                        <outlet property="btn5" destination="pB7-vL-LZC" id="69v-q4-wPL"/>
                         <outlet property="lblSubDic" destination="E7z-VM-ePm" id="PkI-He-RsX"/>
                         <outlet property="lblSubHis" destination="Zlz-pC-CM3" id="wAZ-u4-Fea"/>
                         <outlet property="lblSubRank" destination="U6A-4v-IDQ" id="eGU-JM-6ek"/>
                         <outlet property="searchBar" destination="Az3-tq-fPw" id="6KY-qb-lHJ"/>
+                        <segue destination="hFp-L8-Cd6" kind="show" id="XK1-KX-B4U"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TzX-Iw-8td" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -355,7 +364,13 @@
                                     <fontDescription key="fontDescription" name="NanumBarunGothic" family="NanumBarunGothic" pointSize="17"/>
                                 </textAttributes>
                                 <items>
-                                    <navigationItem title="History" id="bK2-Rx-SZB"/>
+                                    <navigationItem title="History" id="bK2-Rx-SZB">
+                                        <barButtonItem key="leftBarButtonItem" image="arrow_left.png" id="zES-Be-hHM">
+                                            <connections>
+                                                <action selector="backBtn:" destination="ADw-tV-f3H" id="PCi-RW-ePR"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
                                 </items>
                             </navigationBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Z15-Bx-EXM">
@@ -417,7 +432,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="L9x-QJ-28U">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="myCell" id="L9x-QJ-28U">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="L9x-QJ-28U" id="Zvs-0o-AaV">
@@ -426,6 +441,10 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Oj1-CE-z4W" id="sW4-O3-RWa"/>
+                                    <outlet property="delegate" destination="Oj1-CE-z4W" id="mbg-MZ-SFY"/>
+                                </connections>
                             </tableView>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9WV-mQ-DTd">
                                 <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -437,7 +456,13 @@
                                     <color key="textColor" red="0.1333333333" green="0.1333333333" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
                                 </textAttributes>
                                 <items>
-                                    <navigationItem title="My dictionary" id="7YG-aa-Bov"/>
+                                    <navigationItem title="My dictionary" id="7YG-aa-Bov">
+                                        <barButtonItem key="leftBarButtonItem" image="arrow_left.png" id="3JI-LS-GfD">
+                                            <connections>
+                                                <action selector="backBtn:" destination="Oj1-CE-z4W" id="UOv-EB-ibE"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
                                 </items>
                             </navigationBar>
                         </subviews>
@@ -446,6 +471,7 @@
                     <tabBarItem key="tabBarItem" systemItem="mostViewed" id="mRm-tm-0e3"/>
                     <connections>
                         <outlet property="navigationBar" destination="ilu-co-nMg" id="j6x-QV-Qq7"/>
+                        <outlet property="tvListView" destination="Xpl-38-IQr" id="gxy-s0-DiJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GK6-bn-ZzW" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -472,7 +498,13 @@
                                     <fontDescription key="fontDescription" name="NanumBarunGothic" family="NanumBarunGothic" pointSize="17"/>
                                 </textAttributes>
                                 <items>
-                                    <navigationItem title="Ranking" id="Ycg-gy-WaU"/>
+                                    <navigationItem title="Ranking" id="Ycg-gy-WaU">
+                                        <barButtonItem key="leftBarButtonItem" image="arrow_left.png" id="tWj-c5-zSM">
+                                            <connections>
+                                                <action selector="backBtn:" destination="zQ5-vr-zWO" id="hee-tl-qd6"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
                                 </items>
                             </navigationBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4tc-zS-jup">
@@ -519,7 +551,13 @@
                                     <fontDescription key="fontDescription" name="NanumBarunGothic" family="NanumBarunGothic" pointSize="17"/>
                                 </textAttributes>
                                 <items>
-                                    <navigationItem title="Ranking" id="Mh6-ui-tg0"/>
+                                    <navigationItem title="Ranking" id="Mh6-ui-tg0">
+                                        <barButtonItem key="leftBarButtonItem" image="arrow_left.png" id="MhR-ke-KfG">
+                                            <connections>
+                                                <action selector="backBtn:" destination="rhm-8I-yf0" id="wcp-5E-4Lf"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
                                 </items>
                             </navigationBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cEL-At-xW8">
@@ -546,6 +584,183 @@
             </objects>
             <point key="canvasLocation" x="6868" y="-546"/>
         </scene>
+        <!--Just Dictionary View Controller-->
+        <scene sceneID="Mpg-uq-t9u">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I5c-wd-O7U" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="dictionary" id="hFp-L8-Cd6" customClass="JustDictionaryViewController" customModule="takGul" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Gc5-BK-sl9"/>
+                        <viewControllerLayoutGuide type="bottom" id="cWa-RX-0nO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="o9Z-oL-FBQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1tq-Q9-InM">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="barTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" name="NanumBarunGothic" family="NanumBarunGothic" pointSize="17"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="사전" id="vS4-0h-rHY">
+                                        <barButtonItem key="leftBarButtonItem" image="arrow_left.png" id="tX0-C4-UWi">
+                                            <connections>
+                                                <action selector="btnBack:" destination="hFp-L8-Cd6" id="YQX-tb-LPi"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e7Q-Ql-a1n">
+                                <rect key="frame" x="0.0" y="64" width="375" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.82352941176470584" green="0.82352941176470584" blue="0.82352941176470584" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="두부" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3KY-eL-hRm">
+                                <rect key="frame" x="16" y="71" width="176" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="NanumBarunGothicBold" family="NanumBarunGothic" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="두부" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B7P-Qd-vuJ">
+                                <rect key="frame" x="16" y="163" width="128" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="NanumBarunGothic" family="NanumBarunGothic" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ic_search_meaning.png" translatesAutoresizingMaskIntoConstraints="NO" id="6la-Bn-pIp">
+                                <rect key="frame" x="16" y="219" width="95" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="dfsa" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="XtB-KC-2pw">
+                                <rect key="frame" x="16" y="258" width="343" height="125"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="NanumBarunGothic" family="NanumBarunGothic" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HHw-dx-0R8">
+                                <rect key="frame" x="16" y="430" width="343" height="91"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="NanumBarunGothic" family="NanumBarunGothic" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ic_search_meaning.png" translatesAutoresizingMaskIntoConstraints="NO" id="Dz1-VJ-CnE">
+                                <rect key="frame" x="16" y="391" width="95" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Klt-K1-EJU">
+                                <rect key="frame" x="0.0" y="645" width="375" height="22"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="5N6-Kz-HSS"/>
+                                </constraints>
+                                <state key="normal" image="arrow_hide.png"/>
+                                <connections>
+                                    <action selector="push:" destination="hFp-L8-Cd6" eventType="touchUpInside" id="wlE-J5-udK"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Kt6-e4-jwM">
+                                <rect key="frame" x="0.0" y="436" width="375" height="230"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="번역" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7w4-Qk-m6l">
+                                        <rect key="frame" x="8" y="8" width="68" height="49"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="NanumBarunGothic" family="NanumBarunGothic" pointSize="23"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="두부" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9f4-Jq-s7G">
+                                        <rect key="frame" x="25" y="113" width="140" height="70"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="NanumBarunGothic" family="NanumBarunGothic" pointSize="27"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="tofu" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jrK-3p-oGQ">
+                                        <rect key="frame" x="211" y="113" width="140" height="70"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="NanumBarunGothic" family="NanumBarunGothic" pointSize="27"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="한국어" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lr6-Vw-aea">
+                                        <rect key="frame" x="25" y="57" width="140" height="48"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="NanumBarunGothic" family="NanumBarunGothic" pointSize="27"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="영어" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A03-pM-Kk6">
+                                        <rect key="frame" x="211" y="57" width="140" height="48"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="NanumBarunGothic" family="NanumBarunGothic" pointSize="27"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vR5-EL-NwE">
+                                        <rect key="frame" x="134" y="191" width="31" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button" backgroundImage="sound.png"/>
+                                        <connections>
+                                            <action selector="btnSound_K:" destination="hFp-L8-Cd6" eventType="touchUpInside" id="GdS-gr-ZLw"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZfH-GD-XLA">
+                                        <rect key="frame" x="320" y="191" width="31" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button" backgroundImage="sound.png"/>
+                                        <connections>
+                                            <action selector="btnSound_E:" destination="hFp-L8-Cd6" eventType="touchUpInside" id="uKQ-j1-3SY"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="230" id="O2Z-QB-Z9a"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4iw-gt-UO5">
+                                <rect key="frame" x="301" y="75" width="58" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="colorStar.png">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Kt6-e4-jwM" secondAttribute="trailing" id="FWK-4y-Fns"/>
+                            <constraint firstItem="cWa-RX-0nO" firstAttribute="top" secondItem="Klt-K1-EJU" secondAttribute="bottom" id="P4h-9m-k9i"/>
+                            <constraint firstAttribute="bottom" secondItem="Kt6-e4-jwM" secondAttribute="bottom" constant="-230" id="QdY-Q8-ASR"/>
+                            <constraint firstItem="Klt-K1-EJU" firstAttribute="leading" secondItem="o9Z-oL-FBQ" secondAttribute="leading" id="Xwb-VO-8UK"/>
+                            <constraint firstAttribute="trailing" secondItem="Klt-K1-EJU" secondAttribute="trailing" id="qvW-aW-fsu"/>
+                            <constraint firstItem="Kt6-e4-jwM" firstAttribute="leading" secondItem="o9Z-oL-FBQ" secondAttribute="leading" id="tKC-Wy-AJX"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Y0R-dz-hhx"/>
+                    <connections>
+                        <outlet property="lblLink" destination="HHw-dx-0R8" id="6pk-4u-FhB"/>
+                        <outlet property="lblMean" destination="XtB-KC-2pw" id="sTY-6h-oph"/>
+                        <outlet property="lblVoca" destination="3KY-eL-hRm" id="LA4-sb-Kx2"/>
+                        <outlet property="stickBottom" destination="QdY-Q8-ASR" id="ZXF-Il-9yG"/>
+                        <outlet property="stickBottom_2" destination="P4h-9m-k9i" id="xgO-Q5-5dk"/>
+                        <outlet property="voca_E" destination="jrK-3p-oGQ" id="dLq-t0-D15"/>
+                        <outlet property="voca_K" destination="9f4-Jq-s7G" id="JDj-wt-3K0"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="2501.5999999999999" y="272.11394302848578"/>
+        </scene>
         <!--Item 1-->
         <scene sceneID="LOD-RD-vBs">
             <objects>
@@ -566,7 +781,13 @@
                                     <fontDescription key="fontDescription" name="NanumBarunGothic" family="NanumBarunGothic" pointSize="17"/>
                                 </textAttributes>
                                 <items>
-                                    <navigationItem title="Ranking" id="0BM-ch-BM4"/>
+                                    <navigationItem title="Ranking" id="0BM-ch-BM4">
+                                        <barButtonItem key="leftBarButtonItem" image="arrow_left.png" id="OQ5-6j-zkj">
+                                            <connections>
+                                                <action selector="backBtn:" destination="LcM-7G-INq" id="GFh-At-Uwt"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
                                 </items>
                             </navigationBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rwx-zB-X1A">
@@ -634,7 +855,13 @@
                                     <color key="textColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="calibratedRGB"/>
                                 </textAttributes>
                                 <items>
-                                    <navigationItem title="My dictionary" id="scJ-oV-Dwv"/>
+                                    <navigationItem title="My dictionary" id="scJ-oV-Dwv">
+                                        <barButtonItem key="leftBarButtonItem" image="arrow_left.png" id="ILn-up-HMz">
+                                            <connections>
+                                                <action selector="backBtn:" destination="pkE-5a-DWE" id="Em4-Fi-vKP"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
                                 </items>
                             </navigationBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="u1R-JE-Yos">
@@ -667,7 +894,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="ggc-Yn-yqg" sceneMemberID="viewController">
                     <toolbarItems/>
                     <nil key="simulatedTopBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="aUp-ys-JYW">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="aUp-ys-JYW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -682,18 +909,23 @@
         </scene>
     </scenes>
     <resources>
+        <image name="arrow_hide.png" width="18" height="18"/>
+        <image name="arrow_left.png" width="25" height="25"/>
         <image name="bg_splash.png" width="1440" height="2560"/>
+        <image name="colorStar.png" width="81" height="77"/>
         <image name="day.png" width="25" height="25"/>
         <image name="ic_main_history.png" width="425" height="325"/>
         <image name="ic_main_mydictionary.png" width="467" height="313"/>
         <image name="ic_main_ranking.png" width="437" height="309"/>
+        <image name="ic_search_meaning.png" width="193" height="64"/>
         <image name="ic_splash_startbtn.png" width="1000" height="150"/>
         <image name="logo_splash_completed.png" width="564" height="894"/>
+        <image name="sound.png" width="30" height="30"/>
         <image name="week.png" width="25" height="25"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="GRG-aG-FZM"/>
-        <segue reference="umF-A2-WVk"/>
         <segue reference="J2p-Yb-Db9"/>
+        <segue reference="umF-A2-WVk"/>
+        <segue reference="DUa-t6-F6X"/>
     </inferredMetricsTieBreakers>
 </document>

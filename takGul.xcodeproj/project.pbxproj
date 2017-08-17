@@ -23,6 +23,9 @@
 		01943A271F43287700326BDE /* RankingWeekViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01943A261F43287700326BDE /* RankingWeekViewController.swift */; };
 		01943A291F43288100326BDE /* RankingFavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01943A281F43288100326BDE /* RankingFavoriteViewController.swift */; };
 		01943A2B1F43288C00326BDE /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01943A2A1F43288C00326BDE /* HistoryViewController.swift */; };
+		01943A311F432BBA00326BDE /* arrow_left.png in Resources */ = {isa = PBXBuildFile; fileRef = 01943A301F432BBA00326BDE /* arrow_left.png */; };
+		01943A351F43648800326BDE /* ic_search_meaning.png in Resources */ = {isa = PBXBuildFile; fileRef = 01943A341F43648800326BDE /* ic_search_meaning.png */; };
+		01943A371F436B0700326BDE /* JustDictionaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01943A361F436B0700326BDE /* JustDictionaryViewController.swift */; };
 		01A60CC61F3B489B000CCDFB /* colorStar.png in Resources */ = {isa = PBXBuildFile; fileRef = 01A60CC41F3B489B000CCDFB /* colorStar.png */; };
 		01A60CC71F3B489B000CCDFB /* blankStar.png in Resources */ = {isa = PBXBuildFile; fileRef = 01A60CC51F3B489B000CCDFB /* blankStar.png */; };
 		01D1816D1F431D1F0067BF4F /* MostDictionaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D1816C1F431D1F0067BF4F /* MostDictionaryViewController.swift */; };
@@ -33,6 +36,8 @@
 		01D25E901F380B9C001CD722 /* ic_mydictionary_bookmark_uncheck.png in Resources */ = {isa = PBXBuildFile; fileRef = 01D25E8F1F380B9C001CD722 /* ic_mydictionary_bookmark_uncheck.png */; };
 		01D25E941F3812F0001CD722 /* bg_splash.png in Resources */ = {isa = PBXBuildFile; fileRef = 01D25E931F3812F0001CD722 /* bg_splash.png */; };
 		01D25E971F381343001CD722 /* logo_splash_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 01D25E951F381343001CD722 /* logo_splash_1.png */; };
+		01D3ECD31F44BB61004DEBCA /* arrow_hide.png in Resources */ = {isa = PBXBuildFile; fileRef = 01D3ECD21F44BB61004DEBCA /* arrow_hide.png */; };
+		01D3ECD51F44BD6E004DEBCA /* sound.png in Resources */ = {isa = PBXBuildFile; fileRef = 01D3ECD41F44BD6E004DEBCA /* sound.png */; };
 		65DC882AD247D90EBF068F90 /* Pods_takGul.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BE090BBDA9B3827E398EDD6 /* Pods_takGul.framework */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +62,9 @@
 		01943A261F43287700326BDE /* RankingWeekViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RankingWeekViewController.swift; sourceTree = "<group>"; };
 		01943A281F43288100326BDE /* RankingFavoriteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RankingFavoriteViewController.swift; sourceTree = "<group>"; };
 		01943A2A1F43288C00326BDE /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		01943A301F432BBA00326BDE /* arrow_left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = arrow_left.png; path = ../../../../Downloads/arrow_left.png; sourceTree = "<group>"; };
+		01943A341F43648800326BDE /* ic_search_meaning.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_search_meaning.png; path = "../../../../Downloads/Tak_geul-master-3/Resource_xxxhdpi/ic_search_meaning.png"; sourceTree = "<group>"; };
+		01943A361F436B0700326BDE /* JustDictionaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JustDictionaryViewController.swift; sourceTree = "<group>"; };
 		01A60CC41F3B489B000CCDFB /* colorStar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = colorStar.png; path = "../../../../Downloads/Tak_geul-master-3/Resource_xxxhdpi/colorStar.png"; sourceTree = "<group>"; };
 		01A60CC51F3B489B000CCDFB /* blankStar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blankStar.png; path = "../../../../Downloads/Tak_geul-master-3/Resource_xxxhdpi/blankStar.png"; sourceTree = "<group>"; };
 		01D1816C1F431D1F0067BF4F /* MostDictionaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MostDictionaryViewController.swift; sourceTree = "<group>"; };
@@ -67,6 +75,8 @@
 		01D25E8F1F380B9C001CD722 /* ic_mydictionary_bookmark_uncheck.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_mydictionary_bookmark_uncheck.png; path = "../../../../Downloads/Tak_geul-master/Resource_xxxhdpi/ic_mydictionary_bookmark_uncheck.png"; sourceTree = "<group>"; };
 		01D25E931F3812F0001CD722 /* bg_splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bg_splash.png; path = "../../../../Downloads/Tak_geul-master-2/Resource_xxxhdpi/bg_splash.png"; sourceTree = "<group>"; };
 		01D25E951F381343001CD722 /* logo_splash_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo_splash_1.png; path = "../../../../Downloads/Tak_geul-master-2/Resource_xxxhdpi/logo_splash_1.png"; sourceTree = "<group>"; };
+		01D3ECD21F44BB61004DEBCA /* arrow_hide.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = arrow_hide.png; path = ../../../../Downloads/arrow_hide.png; sourceTree = "<group>"; };
+		01D3ECD41F44BD6E004DEBCA /* sound.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sound.png; path = ../../../../Downloads/sound.png; sourceTree = "<group>"; };
 		0BE090BBDA9B3827E398EDD6 /* Pods_takGul.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_takGul.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F84DA7AB7C03A9FEA4664E9 /* Pods-takGul.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-takGul.release.xcconfig"; path = "Pods/Target Support Files/Pods-takGul/Pods-takGul.release.xcconfig"; sourceTree = "<group>"; };
 		FD9EF527A418D83DD08418EA /* Pods-takGul.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-takGul.debug.xcconfig"; path = "Pods/Target Support Files/Pods-takGul/Pods-takGul.debug.xcconfig"; sourceTree = "<group>"; };
@@ -108,17 +118,18 @@
 				0189B09B1F375097004DD330 /* AppDelegate.swift */,
 				0189B09D1F375097004DD330 /* ViewController.swift */,
 				014A725E1F3782340082B5B7 /* MainViewController.swift */,
-				0189B09F1F375097004DD330 /* Main.storyboard */,
-				0189B0A21F375097004DD330 /* Assets.xcassets */,
-				0189B0A41F375097004DD330 /* LaunchScreen.storyboard */,
-				0189B0A71F375097004DD330 /* Info.plist */,
-				014A72591F375FEE0082B5B7 /* UIColor.swift */,
 				01D1816C1F431D1F0067BF4F /* MostDictionaryViewController.swift */,
 				01D1816E1F431D2D0067BF4F /* FavoriteDictionaryViewController.swift */,
 				01943A241F43286B00326BDE /* RankingDayViewController.swift */,
 				01943A261F43287700326BDE /* RankingWeekViewController.swift */,
 				01943A281F43288100326BDE /* RankingFavoriteViewController.swift */,
 				01943A2A1F43288C00326BDE /* HistoryViewController.swift */,
+				01943A361F436B0700326BDE /* JustDictionaryViewController.swift */,
+				0189B09F1F375097004DD330 /* Main.storyboard */,
+				0189B0A21F375097004DD330 /* Assets.xcassets */,
+				0189B0A41F375097004DD330 /* LaunchScreen.storyboard */,
+				0189B0A71F375097004DD330 /* Info.plist */,
+				014A72591F375FEE0082B5B7 /* UIColor.swift */,
 				01D181671F4313D80067BF4F /* photo */,
 			);
 			path = takGul;
@@ -127,6 +138,8 @@
 		01D181671F4313D80067BF4F /* photo */ = {
 			isa = PBXGroup;
 			children = (
+				01D3ECD41F44BD6E004DEBCA /* sound.png */,
+				01D3ECD21F44BB61004DEBCA /* arrow_hide.png */,
 				014A72571F3759920082B5B7 /* logo_splash_completed.png */,
 				014A725B1F3780750082B5B7 /* NanumBarunGothic.ttf */,
 				014A725C1F3781140082B5B7 /* ic_splash_startbtn.png */,
@@ -142,6 +155,8 @@
 				01A60CC51F3B489B000CCDFB /* blankStar.png */,
 				01D25E951F381343001CD722 /* logo_splash_1.png */,
 				0108590C1F38F8B900835212 /* icon.png */,
+				01943A301F432BBA00326BDE /* arrow_left.png */,
+				01943A341F43648800326BDE /* ic_search_meaning.png */,
 			);
 			name = photo;
 			sourceTree = "<group>";
@@ -231,7 +246,10 @@
 				0189B0A61F375097004DD330 /* LaunchScreen.storyboard in Resources */,
 				01A60CC71F3B489B000CCDFB /* blankStar.png in Resources */,
 				0189B0A31F375097004DD330 /* Assets.xcassets in Resources */,
+				01943A351F43648800326BDE /* ic_search_meaning.png in Resources */,
 				01D25E8C1F38012E001CD722 /* ic_main_history.png in Resources */,
+				01943A311F432BBA00326BDE /* arrow_left.png in Resources */,
+				01D3ECD51F44BD6E004DEBCA /* sound.png in Resources */,
 				0189B0A11F375097004DD330 /* Main.storyboard in Resources */,
 				0108590D1F38F8B900835212 /* icon.png in Resources */,
 				01D25E941F3812F0001CD722 /* bg_splash.png in Resources */,
@@ -241,6 +259,7 @@
 				01D25E901F380B9C001CD722 /* ic_mydictionary_bookmark_uncheck.png in Resources */,
 				014A72581F3759920082B5B7 /* logo_splash_completed.png in Resources */,
 				01D25E8D1F38012E001CD722 /* ic_main_mydictionary.png in Resources */,
+				01D3ECD31F44BB61004DEBCA /* arrow_hide.png in Resources */,
 				01D25E8E1F38012E001CD722 /* ic_main_ranking.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -308,6 +327,7 @@
 				01D1816D1F431D1F0067BF4F /* MostDictionaryViewController.swift in Sources */,
 				01943A291F43288100326BDE /* RankingFavoriteViewController.swift in Sources */,
 				0189B09C1F375097004DD330 /* AppDelegate.swift in Sources */,
+				01943A371F436B0700326BDE /* JustDictionaryViewController.swift in Sources */,
 				014A725F1F3782340082B5B7 /* MainViewController.swift in Sources */,
 				01943A271F43287700326BDE /* RankingWeekViewController.swift in Sources */,
 			);

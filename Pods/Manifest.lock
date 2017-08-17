@@ -1,15 +1,15 @@
 PODS:
   - Alamofire (4.5.0)
-  - Kanna (2.1.1)
+  - SWXMLHash (4.0.0)
 
 DEPENDENCIES:
   - Alamofire (~> 4.4)
-  - Kanna (~> 2.1.0)
+  - SWXMLHash (~> 4.0.0)
 
 SPEC CHECKSUMS:
   Alamofire: f28cdffd29de33a7bfa022cbd63ae95a27fae140
-  Kanna: 9b4b086c218703f2b94f5b21a466217dd2f9332e
+  SWXMLHash: 6bbc0bf72975a18ceda469fb7d6a886a26d81694
 
-PODFILE CHECKSUM: 09e659c2f56ccb0a6f24823b3b07ebb00540e3c8
+PODFILE CHECKSUM: ab52e9630a2c0c424c517789eb69a3fdaa498d0c
 
 COCOAPODS: 1.2.1

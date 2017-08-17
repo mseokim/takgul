@@ -9,12 +9,12 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Kanna.xcscheme</key>
+		<key>Pods-takGul.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-takGul.xcscheme</key>
+		<key>SWXMLHash.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -22,7 +22,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>4D10E4FF5A483B852B47CCA0B994E340</key>
+		<key>1770D617233655CCE10312F06B0C6627</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -32,7 +32,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8FC81EF87BE7A5B00DD8B20727C38A0D</key>
+		<key>B241D66413001BC79F24131D2274DF81</key>
 		<dict>
 			<key>primary</key>
 			<true/>

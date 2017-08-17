@@ -7,10 +7,12 @@
 //
 
 import UIKit
+import Alamofire
 
-class MostDictionaryViewController: UIViewController {
+class MostDictionaryViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var navigationBar:UINavigationBar!
+    @IBOutlet weak var tvListView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,7 +25,24 @@ class MostDictionaryViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        tvListView.reloadData()
+    }
+    
+    // MARK: - Table view data source
+    
+    
+    
+    @IBAction func backBtn(_ sender: Any) {
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let newViewController = storyBoard.instantiateViewController(withIdentifier: "Main View") as! MainViewController
+        self.present(newViewController, animated: true, completion: nil)
+    }
 
+    
+    
+    
+    
     /*
     // MARK: - Navigation
 
